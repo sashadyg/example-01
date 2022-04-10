@@ -3,6 +3,6 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"yuvA":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.fetchMovies=t;const e="70c5c640dcd47438a9460ce1b8e1a5b1";function t(t){return fetch(`https://api.themoviedb.org/3/movie/${t}?api_key=${e}`).then(e=>e.json()).catch(e=>console.log(e))}
 },{}],"Focm":[function(require,module,exports) {
-"use strict";require("./sass/main.scss");var e=require("./js/fecthMovies");const t=[27,9,14,15,100,28];localStorage.setItem("movie-id",JSON.stringify(t)),(0,e.fetchMovies)(574).then(e=>console.log(e));const s=()=>parsedId=JSON.parse(localStorage.getItem("movie-id"));function o(){s().length}function r(e){return e.map(({original_title:e,poster_path:t,genres:s,vote_average:o})=>{return""}).join("")}
+"use strict";require("./sass/main.scss");var e=require("./js/fecthMovies");const t=[27,9,14,15,100,28,24,5,13,23,54,64,55,76,87,98,566,10,11,19,20];localStorage.setItem("movie-id",JSON.stringify(t)),(0,e.fetchMovies)(574).then(e=>console.log(e));const s=()=>parsedId=JSON.parse(localStorage.getItem("movie-id"));function o(){s().length<0||s().length}function r(e){return e.map(({original_title:e,poster_path:t,genres:s,vote_average:o})=>{return""}).join("")}
 },{"./sass/main.scss":"clu1","./js/fecthMovies":"yuvA"}]},{},["Focm"], null)
-//# sourceMappingURL=/parcel-project-template/src.4e5835b7.js.map
+//# sourceMappingURL=/parcel-project-template/src.47aa36a4.js.map
