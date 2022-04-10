@@ -1,7 +1,7 @@
 import './sass/main.scss';
 import { fetchMovies } from './js/fecthMovies';
 
-const ids = [27, 9, 14, 15, 100, 28]
+const ids = [27, 9, 14, 15, 100, 28, 24, 5, 13, 23, 54, 64, 55, 76, 87, 98, 566, 10, 11, 19, 20]
 
 localStorage.setItem("movie-id", JSON.stringify(ids))
 
@@ -14,6 +14,8 @@ const getLocalIdWatched = () => parsedId = JSON.parse(localStorage.getItem("movi
 function checkWatchedList() {
     if(getLocalIdWatched().length < 0) {
         return
+    } else if(getLocalIdWatched().length > 20) {
+        
     }
 }
 
